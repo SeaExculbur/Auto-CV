@@ -50,12 +50,6 @@ Auto-CV/
 winget install --id MiKTeX.MiKTeX -e --accept-source-agreements --accept-package-agreements
 ```
 
-安装完成后**重启终端**，再运行以下命令预装所有宏包：
-
-```bash
-bash .claude/skills/Auto-CV/shell/install-packages.sh
-```
-
 **2. 安装 VS Code 插件**
 
 在 VS Code 扩展面板搜索并安装以下两个插件：
@@ -67,10 +61,12 @@ bash .claude/skills/Auto-CV/shell/install-packages.sh
 
 ---
 
-### 第 1 步：克隆项目
+### 第 1 步：克隆项目并安装宏包
 
-```
+```bash
 git clone https://github.com/flamingoTOM/Auto-CV.git
+cd Auto-CV
+bash .claude/skills/Auto-CV/shell/install-packages.sh
 ```
 
 ### 第 2 步：使用 `/Auto-CV` 技能
